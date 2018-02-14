@@ -1,0 +1,136 @@
+/*
+Stylesheet for Espresso: A Guide
+Project 1 in STA 468: Interactive Web Design
+*/
+
+
+/*---
+--- Landing ---
+
+---*/
+
+section#landing{
+    padding:0 4em;
+    height:1200px;
+}
+
+h1{
+    font-family: 'Prata', Didot, serif;
+    color:#453B38;
+    font-size: 9em;
+    position: absolute;
+    top:200px;
+}
+
+#subhead{
+    font-family: 'Lato', Avenir, sans-serif;
+    font-size: .25em;
+    font-weight: 300;
+    position:relative;
+    top:39px;
+    right:430px;
+}
+
+.button{
+    position: absolute;
+    top: 600px;
+    border: 1px solid #453B38;
+    padding: 3em,
+}
+
+svg{
+    position:absolute;
+    top:0;
+    right:100px;
+}
+
+
+/*---
+--- Quiz ---
+
+---*/
+
+section#quiz{
+    background: #5B3939;
+    padding: 2em;
+    margin: 2em;
+    color:#fff6f4;
+}
+
+h2{
+    font-family: 'Prata', Didot, serif;
+    font-size: 4em;
+}
+
+h3{
+    font-family: 'Prata', Didot, serif;
+    font-size: 2.6em;
+    border-top: 2px dashed #A6775B;
+    padding-top: .7em;
+    margin-bottom: .2em;
+}
+
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+p, label{
+    font-family: 'Lato', Avenir, sans-serif;
+    font-weight: 300;
+}
+
+p{
+    font-size:1.3em;
+    margin: .5em 0 1.4em 0;
+}
+
+.click-box{
+    width: 300px;
+    height: 300px;
+    background: #7D4747;
+    display: inline-flex;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 3.2em;
+    margin: 10px;
+    position: relative;
+    transition: ease 300ms;
+}
+
+label.q-2 > input{
+    display: none;
+}
+
+label.q-2 > input:checked + div.click-box{
+    background: #A6775B;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, .3);
+    top: -10px;
+    transition: ease 300ms;
+}
+
+label.q-3{
+    display: block;
+}
+
+
+/*---
+--- Result ---
+
+---*/
+
+section#result{
+    padding: 2em;
+    margin: 2em;
+    color:#453B38;
+}
+
+#quiz-result{
+    font-size: 1.6em;
+    color:#7D4747;
+}
