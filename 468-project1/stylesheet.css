@@ -31,13 +31,6 @@ h1{
     right:430px;
 }
 
-.button{
-    position: absolute;
-    top: 600px;
-    border: 1px solid #453B38;
-    padding: 3em,
-}
-
 svg{
     position:absolute;
     top:0;
