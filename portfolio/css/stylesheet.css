@@ -1,0 +1,727 @@
+/*TO DO: 
+    Footer layout, just line up that text
+    Project pages - design
+    Project pages - content
+    JSON file to populate projects?
+    Resumé and Footer mobile CSS
+    Make the whole thing about a notch larger
+    Write a media query for screens wider than 1280
+*/
+
+/*
+    ** Color scheme **
+    --
+    BACKGROUND
+        White: #fff
+    --
+    TEXT
+        Grey: #2a2929
+    --
+    BORDERS
+        Pink to Orange Gradient: (linear-gradient(to right, #F23C6A, #F2693C)10)
+        Light Orange: #FFAE87
+    --
+    COLORS
+        Red: #F23C3C
+        Orange: #F2693C
+        Pink: #F23C6A
+    --
+    TINTS
+        LIGHT
+        Red: #FF6C6C
+        Orange: #FFAE87
+        Pink: #FF9DB5
+        --
+        EXTRA LIGHT
+        Red: #FFCFCF
+        Orange: #FFD4C5
+        Pink: #FFD6E0
+    --
+*/
+/*
+    ** Project image guidelines **
+    --
+    SIZE
+        340px x 170px
+    --
+    RATIO
+        2:1
+    --
+*/
+
+/*--
+--- Base ---
+--*/
+
+body{
+    background:#fff;
+    margin:0;
+}
+
+#about, #projects, #resume, #summary, #case-study{
+    max-width: 800px;
+    margin: auto;
+    padding-top: 2em;
+}
+
+p, a, ul, ol{
+    font-family:Open Sans, sans-serif;
+    color:#2a2929;
+    font-size: 1em;
+}
+
+a{
+    text-decoration:none;
+    
+}
+
+a:hover{
+    /*
+    background: linear-gradient(to right, #F23C6A, #F2693C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+    text-decoration: none;
+    transition: 500ms;
+}
+
+h1{
+    margin-top:1.3em;
+}
+
+h1, h2{
+    font-family:Montserrat, sans-serif;
+    color:#2a2929;
+    font-weight: bold;
+    font-size: 5em;
+    line-height: .8em;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
+}
+
+h3{
+    font-family:Montserrat, sans-serif;
+    color:#2a2929;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: .8em;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
+    margin-bottom: .7em;
+}
+
+h4{
+    font-family:Montserrat, sans-serif;
+    color:#2a2929;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: .8em;
+}
+
+ul{
+    text-indent:0px;
+    padding:0;
+}
+
+li{
+    list-style:none;
+}
+
+
+/*--
+--- Base ---
+--*/
+/*--
+MOBILE
+--*/
+
+@media screen and (max-width: 768px) {
+    
+    #about, #projects, #resume{
+        margin:2em 2em 0 2em;
+    }
+    
+    h1, h2{
+        font-size:6em;
+    }
+    
+    h3{
+        font-size:2.4em;
+        line-height: .9em;
+    }
+    
+    p, a, ul, ol{
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    
+    #about, #projects, #resume{
+        margin:2em 2em 0 2em;
+    }
+    
+    h1, h2{
+        font-size:2.8em;
+        margin-top: 0;
+    }
+    
+    h3{
+        font-size:1.9em;
+    }
+    
+    h4{
+        font-size:1.2em;
+    }
+    
+    p, a, ul, ol{
+        font-size:1.1em;
+    }
+    
+}
+
+
+/*--
+--- Navigation ---
+--*/
+
+nav{
+    width:100%;
+    height:27px;
+    padding: 8px 6px 2px 6px;
+    background: #2a2929;
+    position: fixed;
+    top:0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .15);
+}
+
+nav a{
+    color:#fff;
+    margin:auto;
+}
+
+nav a:hover{
+    color:#FFD6E0;
+    display:;
+}
+
+#nav-container{
+    max-width: 1200px;
+    margin: auto;
+    float:right;
+    margin-right:24px;
+}
+
+nav svg{
+    height:16px;
+    margin: auto -8px auto 4px;
+    position: relative;
+    top: 1px;
+}
+
+.nav-hidden{
+    display:none;
+}
+
+
+/*--
+--- Navigation ---
+--*/
+/*--
+MOBILE
+--*/
+
+@media screen and (max-width: 768px) {
+    
+    nav{
+        
+    }
+    
+}
+
+@media screen and (max-width: 680px) {
+    
+    nav{
+        
+    }
+    
+}
+
+
+/*--
+--- Profile Section ---
+--*/
+    
+#profile-wrapper{
+    margin:2em;
+}
+
+#profile-image{
+    border: 3px solid #FFAE87;
+    width:15em;
+    float: left;
+    margin: 2em 2em 2em 0em;
+}
+
+#profile-content{
+    border: 3px solid;
+    border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
+    padding: 4em 4em 4em 14em;
+    margin: 0 0 0 4em;
+}
+
+    
+/*--
+--- Profile Section ---
+--*/
+/*--
+MOBILE
+--*/
+
+@media screen and (max-width: 768px) {
+
+    #profile-wrapper{
+        margin: 10em 0 3em;
+        border: 3px solid;
+        border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
+        padding:1em;
+    }
+    
+    #profile-image{
+        border:none;
+        float:none;
+        outline: 3px solid #FFAE87;
+        width:60%;
+        display: block;
+        margin: -6em auto 3em auto;
+        
+    }
+    
+    #profile-content{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    
+    #profile-wrapper{
+        margin: 7em 0 3em;
+    }
+    
+}
+
+
+/*--
+--- Projects Section ---
+--*/
+
+.projects{
+    margin:0 2em;
+    display:grid;
+    grid-template-columns: repeat(2,340px);
+    grid-gap: 55px;
+}
+
+.proj-img-wrapper{
+    overflow: hidden;
+    height: 170px;
+    position:relative;
+    z-index: -2;
+    transition: ease 500ms;
+}
+
+.proj-img-wrapper.red{
+    background: #F23C3C;
+}
+
+.proj-img-wrapper.orange{
+    background: #F2693C;
+}
+
+.proj-img-wrapper.pink{
+    background: #F23C6A;
+}
+
+.proj-img{
+    width:340px;
+    position: relative;
+    z-index: -1;
+    transition: ease 500ms;
+}
+
+a:hover .proj-img-wrapper{
+    transition: ease 500ms;
+}
+
+a:hover .proj-img-wrapper.red{
+    background: #FF6C6C;
+}
+
+a:hover .proj-img-wrapper.orange{
+    background: #FFAE87;
+}
+
+a:hover .proj-img-wrapper.pink{
+    background: #FF9DB5;
+}
+
+a:hover .proj-img{
+    transition: ease 500ms;
+    -webkit-animation: wobble 3s 400ms infinite;
+    animation: wobble 3s 400ms infinite;
+}
+
+@-webkit-keyframes wobble{
+    0%, 60%, 100% {transform: rotate(0deg)}
+    12% {transform: rotate(7deg) translateX(3%)}
+    20% {transform: rotate(-4deg) translateX(-2%)}
+    30% {transform: rotate(3deg) translateX(2%)}
+    40% {transform: rotate(-2deg)  translateX(-1%)}
+}
+
+@keyframes wobble{
+    0%, 60%, 100% {transform: rotate(0deg)}
+    12% {transform: rotate(7deg) translateX(3%)}
+    20% {transform: rotate(-4deg) translateX(-2%)}
+    30% {transform: rotate(3deg) translateX(2%)}
+    40% {transform: rotate(-2deg)  translateX(-1%)}
+}
+
+.proj-info-wrapper{
+    width: fit-content;
+    height: 1.4em;
+    margin: 0 1em;
+}
+
+.proj-info-wrapper.red{
+    background:#FFCFCF;
+}
+
+.proj-info-wrapper.orange{
+    background:#FFD4C5;
+}
+
+.proj-info-wrapper.pink{
+    background:#FFD6E0;
+}
+
+.proj-heading{
+    border:none;
+    margin: -.4em 0 0 0;
+    padding: .2em 1em 0 .2em;
+}
+
+.proj-info{
+    margin: 1em 0 0 1.4em;
+    max-width: 320px;
+}
+
+
+/*--
+--- Projects Section ---
+--*/
+/*--
+MOBILE
+--*/
+
+@media screen and (max-width: 768px) {
+
+    .projects{
+        margin:0;
+        grid-template-columns: repeat(1,100%);
+        grid-gap: 4em;
+    }
+
+    .proj-img-wrapper{
+        height:100%;
+    }
+    
+    .proj-img{
+        width:100%;
+    }
+
+    .proj-info-wrapper{
+        height: 1.8em;
+        margin: 0 1em;
+    }
+    
+    a:hover .proj-img-wrapper, a:hover .proj-img{
+        -webkit-animation:none;
+        animation: none;
+    }
+
+
+    .proj-heading{
+        font-size: 2.4em;
+    }
+
+    .proj-info{
+        margin: 1.6em 0 0 1.4em;
+        max-width: 500px;
+        font-size:1em;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    
+    .projects{
+        grid-gap: 2em;
+    }
+    
+    .proj-img-wrapper{
+        height:100%;
+    }
+
+    .proj-info-wrapper{
+        height: 1.2em;
+    }
+
+    .proj-heading{
+        font-size:1.7em;
+    }
+
+    .proj-info{
+        margin: 1em 0 0 1.4em;
+        max-width: 320px;
+        font-size:1em;
+    }
+    
+}
+
+
+/*--
+--- Resumé Section ---
+--*/
+
+#resume-content{
+    margin:0 2em;
+}
+
+#resume-link-wrapper{
+    background:#FFCFCF;
+    width: fit-content;
+    height: 1em;
+    margin: 4em 0;
+    transition: ease 500ms;
+}
+
+/*
+#resume-link-wrapper:hover{
+    width:;
+    transition: ease 1s;
+}
+
+#resume-link-wrapper:hover #resume-link{
+    padding-left: 20px;
+    transition: ease 1s;
+}
+*/
+
+#resume-link-wrapper:hover{
+    background: #FF6C6C;
+    transition: ease 500ms;
+}
+
+#resume-link-wrapper:hover #resume-link{
+    margin: .4em;
+    letter-spacing: 1px;
+}
+
+#resume-link{
+    font-family:Montserrat, sans-serif;
+    color:#2a2929;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    padding: .2em 1em 0 .2em;
+    transition: ease 1s;
+}
+
+#experience li{
+    padding:0 0 2em 0;
+}
+
+#experience>li:last-child{
+    padding:0;
+}
+
+.role{
+    font-weight:700;
+    color:#F23C3C;    
+    background: -webkit-linear-gradient(to right, #F23C6A, #F2693C);
+    background: linear-gradient(to right, #F23C6A, #F2693C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#experience li ul{
+    margin-top: .2em;
+    padding: 0 0 0 .9em;
+}
+
+#experience li li{
+    padding: 0.2em 0 0 0 !important;
+    list-style-image: url(../bullet.svg);
+    text-indent: .3em;
+}
+
+.chunks{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+}
+
+.tech-cats{
+    display:grid;
+    grid-template-columns: repeat(2,140px);
+    grid-gap:20px;
+}
+
+.chunks ul, .tech-cats h4{
+    margin:0;
+    line-height:1.5em;
+}
+
+
+/*--
+--- Resumé Section ---
+--*/
+/*--
+MOBILE
+--*/
+
+@media screen and (max-width: 768px) {
+    
+    #resume-content{
+    margin:0;
+    }
+    
+    .chunks{
+        width:100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+
+@media screen and (max-width: 680px) {
+    
+    #resume-link-wrapper{
+        margin: 3em 0;
+    }
+
+    #resume-link{
+        font-size: 1.3em;
+    }
+    
+    .chunks{
+        display:block;
+    }
+    
+}
+
+
+/*--
+--- Footer Section ---
+--*/
+
+#footer{
+    margin:auto;
+    max-width:800px;
+}
+
+#footer-wrapper{
+    margin:5em 0 10em;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
+    padding:2em;
+}
+
+#social{
+    border:none;
+    font-size:2em;
+    margin:0 0 .4em 0;
+    color: #F23C3C;
+}
+
+#footer a{
+    padding-right: .5em;
+    text-decoration: none;
+    transition: ease-in-out 200ms;
+    color: #c8c1c1;
+}
+
+#footer a:hover{
+    color:#FFAE87;
+    transition: ease-in-out 200ms;
+}
+
+svg{
+    width:2.5em;
+}
+
+.hidden{
+    display: none;
+}
+
+#footer p{
+    float:right;
+    text-align: right;
+    max-width: 358px;
+}
+
+
+/*--
+--- Footer Section ---
+--*/
+/*--
+MOBILE
+--*/
+
+@media screen and (max-width: 768px) {
+
+    #footer{
+        margin:2em 2em 0 2em;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    
+    #footer p{
+        
+    }
+}
+
+
+/*--
+--- Project Pages ---
+--*/
+
+#summary-wrapper{
+    margin:2em;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
+    padding: 4em;
+}
+
+#summary h2{
+    font-size: 3em;
+    margin: 0 0 .2em 0;
+}
+
+#case-study-wrapper{
+    margin: 2em;
+}
+
+/*--
+--- Project Pages ---
+--*/
+/*--
+MOBILE
+--*/
+
