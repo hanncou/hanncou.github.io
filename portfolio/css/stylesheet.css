@@ -64,10 +64,11 @@ body{
     padding-top: 2em;
 }
 
-p, a, ul, ol{
+p, a, ul, ol, figcaption{
     font-family:Open Sans, sans-serif;
     color:#2a2929;
     font-size: 1em;
+    font-weight: 300;
 }
 
 a{
@@ -194,6 +195,7 @@ nav{
     position: fixed;
     top:0;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .15);
+    z-index: 50;
 }
 
 nav a{
@@ -714,9 +716,55 @@ MOBILE
     margin: 0 0 .2em 0;
 }
 
-#case-study-wrapper{
+.case-study-wrapper{
     margin: 2em;
+    overflow: hidden;
+    box-sizing: border-box;
 }
+
+.case-study-wrapper figure{
+    margin: 3em 5%;
+    padding: 1em 0;
+    width: 90%;
+    border: 1px solid #FFAE87;
+}
+
+.case-study-wrapper img{
+    width: 100%;
+}
+
+.case-study-wrapper figcaption{
+    font-size: .8em;
+    padding: 1em 1.5em 0 1.5em;
+}
+
+.case-study-wrapper a{
+    color: #F23C6A;
+    font-weight: 400;
+    transition: 0s;
+}
+
+.case-study-wrapper a:hover{
+    border-bottom: 1px solid #F23C6A;
+    transition: 0s;
+}
+
+.prototype-wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.prototype-wrapper iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    
 
 /*--
 --- Project Pages ---
