@@ -96,10 +96,8 @@ h1, h2{
     font-weight: bold;
     font-size: 5em;
     line-height: .8em;
+    border: 0;
     border-bottom: 3px solid;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
     -webkit-border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
     border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
 }
@@ -110,7 +108,9 @@ h3{
     font-weight: bold;
     font-size: 2em;
     line-height: .8em;
+    border: 0;
     border-bottom: 2px solid;
+    -webkit-border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
     border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
     margin-bottom: .7em;
 }
