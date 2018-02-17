@@ -738,14 +738,14 @@ MOBILE
     padding: 1em 1.5em 0 1.5em;
 }
 
-.case-study-wrapper a{
+#summary-wrapper a, .case-study-wrapper a{
     color: #F23C6A;
     font-weight: 400;
     transition: 0s;
 }
 
-.case-study-wrapper a:hover{
-    border-bottom: 1px solid #F23C6A;
+#summary-wrapper a:hover, .case-study-wrapper a:hover{
+    border-bottom: 1px solid #FFCFCF;
     transition: 0s;
 }
 
