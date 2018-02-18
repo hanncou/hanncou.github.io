@@ -76,12 +76,7 @@ a{
     
 }
 
-a:hover{
-    /*
-    background: linear-gradient(to right, #F23C6A, #F2693C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    */
+a:hover, a:focus{
     text-decoration: none;
     transition: 500ms;
 }
@@ -94,7 +89,7 @@ h1, h2{
     font-family:Montserrat, sans-serif;
     color:#2a2929;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 5rem;
     line-height: .8em;
     border: 0;
     border-bottom: 3px solid;
@@ -106,7 +101,7 @@ h3{
     font-family:Montserrat, sans-serif;
     color:#2a2929;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
     line-height: .8em;
     border: 0;
     border-bottom: 2px solid;
@@ -207,7 +202,7 @@ nav a{
     margin:auto;
 }
 
-nav a:hover{
+nav a:hover, nav a:focus{
     color:#FFD6E0;
     display:;
 }
@@ -359,23 +354,23 @@ MOBILE
     transition: ease 500ms;
 }
 
-a:hover .proj-img-wrapper{
+a:hover .proj-img-wrapper, a:focus .proj-img-wrapper{
     transition: ease 500ms;
 }
 
-a:hover .proj-img-wrapper.red{
+a:hover .proj-img-wrapper.red, a:focus .proj-img-wrapper.red{
     background: #FF6C6C;
 }
 
-a:hover .proj-img-wrapper.orange{
+a:hover .proj-img-wrapper.orange, a:focus .proj-img-wrapper.orange{
     background: #FFAE87;
 }
 
-a:hover .proj-img-wrapper.pink{
+a:hover .proj-img-wrapper.pink, a:focus .proj-img-wrapper.pink{
     background: #FF9DB5;
 }
 
-a:hover .proj-img{
+a:hover .proj-img, a:focus .proj-img{
     transition: ease 500ms;
     -webkit-animation: wobble 3s 400ms infinite;
     animation: wobble 3s 400ms infinite;
@@ -455,7 +450,7 @@ MOBILE
         margin: 0 1em;
     }
     
-    a:hover .proj-img-wrapper, a:hover .proj-img{
+    a:hover .proj-img-wrapper, a:hover .proj-img, a:focus .proj-img-wrapper, a:focus .proj-img{
         -webkit-animation:none;
         animation: none;
     }
@@ -516,24 +511,12 @@ MOBILE
     transition: ease 500ms;
 }
 
-/*
-#resume-link-wrapper:hover{
-    width:;
-    transition: ease 1s;
-}
-
-#resume-link-wrapper:hover #resume-link{
-    padding-left: 20px;
-    transition: ease 1s;
-}
-*/
-
-#resume-link-wrapper:hover{
+#resume-link-wrapper:hover, #resume-link-wrapper:focus{
     background: #FF6C6C;
     transition: ease 500ms;
 }
 
-#resume-link-wrapper:hover #resume-link{
+#resume-link-wrapper:hover #resume-link, #resume-link-wrapper:focus #resume-link{
     margin: .4em;
     letter-spacing: 1px;
 }
@@ -568,12 +551,12 @@ MOBILE
 #experience li ul{
     margin-top: .2em;
     padding: 0 0 0 .9em;
+    font-size: 1em;
 }
 
 #experience li li{
     padding: 0.2em 0 0 0 !important;
     list-style-image: url(../bullet.svg);
-    text-indent: .3em;
 }
 
 .chunks{
@@ -646,9 +629,12 @@ MOBILE
     border: 3px solid;
     border-image: linear-gradient(to right, #F23C6A, #F2693C)10;
     padding:2em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
 }
 
-#social{
+#footer h2{
     border:none;
     font-size:2em;
     margin:0 0 .4em 0;
@@ -662,7 +648,7 @@ MOBILE
     color: #c8c1c1;
 }
 
-#footer a:hover{
+#footer a:hover, #footer a:focus{
     color:#FFAE87;
     transition: ease-in-out 200ms;
 }
@@ -679,6 +665,7 @@ svg{
     float:right;
     text-align: right;
     max-width: 358px;
+    margin: 3px 0 0 0;
 }
 
 
@@ -742,13 +729,18 @@ MOBILE
     padding: 1em 1.5em 0 1.5em;
 }
 
+.case-study-wrapper h3{
+    padding-top: 2.5em;
+    margin-top:0;
+}
+
 #summary-wrapper a, .case-study-wrapper a{
     color: #F23C6A;
     font-weight: 400;
     transition: 0s;
 }
 
-#summary-wrapper a:hover, .case-study-wrapper a:hover{
+#summary-wrapper a:hover, .case-study-wrapper a:hover, #summary-wrapper a:focus, .case-study-wrapper a:focus{
     border-bottom: 1px solid #FFCFCF;
     transition: 0s;
 }
@@ -776,4 +768,42 @@ MOBILE
 /*--
 MOBILE
 --*/
+
+
+
+/*--
+--- Etc. ---
+--*/
+
+#to-top{
+    position: fixed;
+    right: 3em;
+    bottom: 3em;
+    font-size: .8em;
+}
+
+#to-top a{
+    color: #FF6C6C;
+}
+
+#to-top svg{
+    position: relative;
+    top:12px;
+    padding-left: .3em;
+}
+
+
+/*--
+--- Etc. ---
+--*/
+/*--
+MOBILE
+--*/
+
+@media screen and (max-width: 768px) {
+
+    #to-top{
+        display: none;
+    }
+}
 
