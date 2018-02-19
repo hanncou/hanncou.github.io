@@ -545,7 +545,9 @@ MOBILE
     background: -webkit-linear-gradient(to right, #F23C6A, #F2693C);
     background: linear-gradient(to right, #F23C6A, #F2693C);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
 }
 
 #experience li ul{
