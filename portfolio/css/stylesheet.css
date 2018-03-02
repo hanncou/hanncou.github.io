@@ -798,6 +798,8 @@ MOBILE
     transition: 0s;
 }
 
+/*Moka Prototype*/
+
 .prototype-wrapper{
     position: relative;
     padding-bottom: 56.25%;
@@ -812,6 +814,34 @@ MOBILE
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/*Photo Series Lightbox*/
+
+#digital-image-container{
+    margin: 4em 5% 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    overflow: hidden;
+}
+
+#digital-image-container a{
+    overflow: hidden;
+}
+
+#digital-image-container a img{
+    filter: grayscale(100%) brightness(50%);
+    transition: ease-in-out 300ms;
+}
+
+#digital-image-container a:hover, #digital-image-container a:focus{
+    border:none;
+}
+
+#digital-image-container a:hover img, #digital-image-container a:focus img{
+    filter: grayscale(0%) brightness(100%);
+    transition: ease-in-out 300ms;
 }
     
 
