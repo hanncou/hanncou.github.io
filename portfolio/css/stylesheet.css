@@ -164,7 +164,7 @@ MOBILE
     }
     
     h1, h2{
-        font-size:2.8em;
+        font-size:2.6em;
         margin-top: 0;
     }
     
@@ -747,8 +747,7 @@ svg{
     display: none;
 }
 
-#footer p{
-    float:right;
+#credit p{
     text-align: right;
     max-width: 358px;
     margin: 3px 0 0 0;
@@ -787,6 +786,7 @@ MOBILE
     
     #credit p{
         text-align: left;
+        float: none;
     }
 }
 
@@ -911,6 +911,11 @@ MOBILE
 
     #summary-wrapper{
         margin:0;
+        padding:3em 1em;
+    }
+    
+    #summary-wrapper a, #case-study-wrapper a{
+        font-size: 1em;
     }
     
 }
