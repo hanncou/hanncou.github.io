@@ -1,11 +1,10 @@
 /*TO DO: 
-    Footer layout, just line up that text
-    Project pages - design
+    MOBILE Project pages - design
     Project pages - content
     JSON file to populate projects?
-    Resumé and Footer mobile CSS
-    Make the whole thing about a notch larger
-    Write a media query for screens wider than 1280
+    MOBILE Footer - design
+    MOBILE Nav bar
+    Nav with labels, go away on scroll
 */
 
 /*
@@ -143,7 +142,7 @@ MOBILE
     }
     
     h1, h2{
-        font-size:6em;
+        font-size:6rem;
     }
     
     h3{
@@ -223,10 +222,8 @@ nav a:hover, nav a:focus{
 
 #nav-container{
     max-width: 1200px;
-    margin: auto;
+    margin: auto 24px;
     float:right;
-    margin-right:24px;
-    border-left: solid #fff 1px;
 }
 
 nav svg{
@@ -236,9 +233,20 @@ nav svg{
     top: 1px;
 }
 
-.nav-hidden{
-    display:none;
+/* Come back to for the onscroll animation
+nav a span{
+    -webkit-transition: ease 500ms;
+    -moz-transition: ease 500ms;
+    transition: ease 500ms;
 }
+
+.nav-small div a span{
+    display:none;
+    -webkit-transition: ease 500ms;
+    -moz-transition: ease 500ms;
+    transition: ease 500ms;
+}
+*/
 
 
 /*--
@@ -251,7 +259,17 @@ MOBILE
 @media screen and (max-width: 768px) {
     
     nav{
-        
+        height: 50px;
+        padding: 8px 0 0 0;
+    }
+    
+    nav a{
+        font-size: 1.5em;
+    }
+    
+    nav svg{
+        height: 30px;
+        margin: 3px -8px 0px 12px;
     }
     
 }
@@ -259,7 +277,23 @@ MOBILE
 @media screen and (max-width: 680px) {
     
     nav{
-        
+        height: 50px;
+        padding: 8px 0 0 0;
+    }
+    
+    #nav-container{
+        float: none;
+        text-align: center;
+    }
+    
+    nav svg{
+        height: 35px;
+        width: calc(90% / 4);
+        margin: 0;
+    }
+    
+    nav div a span{
+        display:none; 
     }
     
 }
@@ -267,7 +301,13 @@ MOBILE
 @media screen and (min-width: 1536px) {
     
     nav{
-        
+        height: 50px;
+        font-size: 1.3em;
+    }
+    
+    nav svg{
+        height: 30px;
+        margin: 3px -8px 0px 12px;
     }
     
 }
@@ -343,7 +383,7 @@ MOBILE
 --- Projects Section ---
 --*/
 
-.projects{
+#project-container{
     margin:0 2em;
     display:grid;
     grid-template-columns: repeat(2,340px);
@@ -358,15 +398,15 @@ MOBILE
     transition: ease 500ms;
 }
 
-.proj-img-wrapper.red{
+.red .proj-img-wrapper{
     background: #F23C3C;
 }
 
-.proj-img-wrapper.orange{
+.orange .proj-img-wrapper{
     background: #F2693C;
 }
 
-.proj-img-wrapper.pink{
+.pink .proj-img-wrapper{
     background: #F23C6A;
 }
 
@@ -381,15 +421,15 @@ a:hover .proj-img-wrapper, a:focus .proj-img-wrapper{
     transition: ease 500ms;
 }
 
-a:hover .proj-img-wrapper.red, a:focus .proj-img-wrapper.red{
+a:hover .red .proj-img-wrapper, a:focus .red .proj-img-wrapper{
     background: #FF6C6C;
 }
 
-a:hover .proj-img-wrapper.orange, a:focus .proj-img-wrapper.orange{
+a:hover .orange .proj-img-wrapper, a:focus .orange .proj-img-wrapper{
     background: #FFAE87;
 }
 
-a:hover .proj-img-wrapper.pink, a:focus .proj-img-wrapper.pink{
+a:hover .pink .proj-img-wrapper, a:focus .pink .proj-img-wrapper{
     background: #FF9DB5;
 }
 
@@ -421,15 +461,15 @@ a:hover .proj-img, a:focus .proj-img{
     margin: 0 1em;
 }
 
-.proj-info-wrapper.red{
+.red .proj-info-wrapper{
     background:#FFCFCF;
 }
 
-.proj-info-wrapper.orange{
+.orange .proj-info-wrapper{
     background:#FFD4C5;
 }
 
-.proj-info-wrapper.pink{
+.pink .proj-info-wrapper{
     background:#FFD6E0;
 }
 
@@ -454,7 +494,7 @@ MOBILE
 
 @media screen and (max-width: 768px) {
 
-    .projects{
+    #project-container{
         margin:0;
         grid-template-columns: repeat(1,100%);
         grid-gap: 4em;
@@ -493,7 +533,7 @@ MOBILE
 
 @media screen and (max-width: 680px) {
     
-    .projects{
+    #project-container{
         grid-gap: 2em;
     }
     
@@ -519,7 +559,7 @@ MOBILE
 
 @media screen and (min-width: 1536px) {
     
-    .projects{
+    #project-container{
         grid-template-columns: repeat(2,480px);
         grid-gap: 57px;
     }
@@ -726,12 +766,26 @@ MOBILE
     #footer{
         margin:2em 2em 0 2em;
     }
+    
 }
 
 @media screen and (max-width: 680px) {
     
-    #footer p{
-        
+    #footer-wrapper{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:50px;
+    }
+    
+    #social{
+        font-size:1.3em;
+    }
+    
+    #social svg{
+        width: calc(60% / 2);
+    }
+    
+    #credit p{
+        text-align: left;
     }
 }
 

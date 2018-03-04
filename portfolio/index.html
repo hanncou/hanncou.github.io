@@ -55,15 +55,15 @@
 <section id="projects">
     <h2>Projects</h2>
     
-    <div class="projects">
+    <div id="project-container">
         
     <!--Start Moka / Red-->
         <a href="projects/moka-group.html">
-        <div class="proj-wrapper">
-            <div class="proj-img-wrapper red">
+        <div class="proj-wrapper red">
+            <div class="proj-img-wrapper">
                 <img src="proj-content/moka.png" class="proj-img"/>
             </div>
-            <div class="proj-info-wrapper red">
+            <div class="proj-info-wrapper">
                 <h3 class="proj-heading">Moka Group</h3>
             </div>
             <p class="proj-info">UX, Web and Print Design / Photography and Content Creation</p>
@@ -73,11 +73,11 @@
         
     <!--Start Sherlockian / Orange-->
         <a href="projects/sherlockian.html">
-        <div class="proj-wrapper">
-            <div class="proj-img-wrapper orange">
+        <div class="proj-wrapper orange">
+            <div class="proj-img-wrapper">
                 <img src="proj-content/sherlockian.png" class="proj-img"/>
             </div>
-            <div class="proj-info-wrapper orange">
+            <div class="proj-info-wrapper">
                 <h3 class="proj-heading">Sherlockian.net</h3>
             </div>
             <p class="proj-info">UX, Interaction, Visual and Content Design / Marketing Material Design</p>
@@ -87,11 +87,11 @@
         
     <!--Start Teta / Pink-->
         <a href="projects/teta.html">
-        <div class="proj-wrapper">
-            <div class="proj-img-wrapper pink">
+        <div class="proj-wrapper pink">
+            <div class="proj-img-wrapper">
                 <img src="proj-content/teta.png" class="proj-img"/>
             </div>
-            <div class="proj-info-wrapper pink">
+            <div class="proj-info-wrapper">
                 <h3 class="proj-heading">Teta Film</h3>
             </div>
             <p class="proj-info">Web and Print Design / Photography and Marketing Material Design</p>
@@ -101,11 +101,11 @@
         
     <!--Start Wendy's / Red-->
         <a href="projects/wendys.html">
-        <div class="proj-wrapper">
-            <div class="proj-img-wrapper red">
+        <div class="proj-wrapper red">
+            <div class="proj-img-wrapper">
                 <img src="proj-content/wendys.png" class="proj-img"/>
             </div>
-            <div class="proj-info-wrapper red">
+            <div class="proj-info-wrapper">
                 <h3 class="proj-heading">Wendy's</h3>
             </div>
             <p class="proj-info">Instagram Landscape and Competitor Analysis</p>
@@ -117,11 +117,11 @@
         
     <!--Start MSU Library / Orange ->
         <a href="projects/msu-library.html">
-        <div class="proj-wrapper">
-            <div class="proj-img-wrapper orange">
+        <div class="proj-wrapper orange">
+            <div class="proj-img-wrapper">
                 <img src="proj-content/library.png" class="proj-img"/>
             </div>
-            <div class="proj-info-wrapper orange">
+            <div class="proj-info-wrapper">
                 <h3 class="proj-heading">MSU Library</h3>
             </div>
             <p class="proj-info">Digital Wayfinding UX Research / Usability Testing and Landscape Analysis</p>
@@ -131,11 +131,11 @@
         
     <!--Start A11yed / Pink ->
         <a href="projects/proj-link">
-        <div class="proj-wrapper">
-            <div class="proj-img-wrapper pink">
+        <div class="proj-wrapper pink">
+            <div class="proj-img-wrapper">
                 <img src="proj-content/teta.png" class="proj-img"/>
             </div>
-            <div class="proj-info-wrapper pink">
+            <div class="proj-info-wrapper">
                 <h3 class="proj-heading">A11yed Software</h3>
             </div>
             <p class="proj-info">User Research / UX Design / Interactive Prototype</p>
@@ -145,11 +145,11 @@
 
     <!--Start agnès / Red ->
         <a href="projects/agnes.html">
-        <div class="proj-wrapper">
-            <div class="proj-img-wrapper red">
+        <div class="proj-wrapper red">
+            <div class="proj-img-wrapper">
                 <img src="proj-content/agnes.png" class="proj-img"/>
             </div>
-            <div class="proj-info-wrapper red">
+            <div class="proj-info-wrapper">
                 <h3 class="proj-heading">agnès films</h3>
             </div>
             <p class="proj-info">Community Management Redesign / Event Campaign Marketing</p>
@@ -189,13 +189,13 @@
                 <ul id="experience">
                     
                     
-                    <li>Steelcase / ComArtSci
+                    <li>College of Communication Arts and Sciences - Michigan State University
                         <br/><span class="role">User Experience Design Intern</span>
                         <br/>(Oct 2017-present)
                         <br/>
                         <ul>
-                            <li>performed UX research for a community management dashboard displaying activity in JIVE ESM software</li> 
-                            <li>worked with stakeholders and developers to create an information architecture for the system and the data displayed</li>
+                            <li>performed UX research for a community management dashboard displaying activity in JIVE enterprise social media software</li> 
+                            <li>worked with stakeholders and developers to craft an information architecture according to strategic goals</li>
                             <li>proposed new features and data visualizations to better suit user needs</li>
                         </ul>
                     </li>
@@ -212,7 +212,7 @@
                         </ul>
                     </li>
 
-                    <li>WIDE Research
+                    <li>WIDE Research - Michigan State University
                         <br/><span class="role">Information Architecture and Communications Intern</span>
                         <br/>(Oct 2016-present)
                         <br/>
@@ -379,22 +379,22 @@
     </div>
 </section>
     
+    
 <!--Scripts-->
+    
 <!--JQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--JQuery Easing-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="js/jquery.smooth-scroll.js"></script>
-<!--Scrolling-->
-<script>$('a.scroll').smoothScroll();</script>
+    
 <!--Greeting-->
 <script>
+    
     var timeOfDay = new Date().getHours();
 	var greeting;
-	var morning = ('Good morning!');
-	var afternoon = ('Good afternoon!');
-	var evening = ('Good evening!');
-    var other = ('Hello!');
+    
+	var morning = ("Good morning!");
+	var afternoon = ("Good afternoon!");
+	var evening = ("Good evening!");
+    var other = ("Hello!");
 
 	if (timeOfDay >= 0 && timeOfDay < 12) {
 		greeting = morning; 
@@ -412,6 +412,56 @@
     document.getElementById("greeting").innerHTML = greeting;
     
 </script>
+    
+<!--JQuery Easing-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/jquery.smooth-scroll.js"></script>
+    
+<!--Scrolling-->
+<script>$('a.scroll').smoothScroll();</script>
+   
+    
+    <!--Unfinished Scripts
+    
+<!--Nav Script- ->
+<script>
+window.onscroll = function() {navScroll()};
+
+function navScroll() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.querySelector("nav").className = "nav-small";
+    } else {
+        document.querySelector("nav").className = "";
+    }
+}
+</script>
+    
+<!--Project Color Script- ->
+<script>
+
+    var project = document.getElementById('project-container').getElementsByTagName('a');
+    
+    function projectColor() {
+        
+    }
+    
+    project.forEach(projectColor);
+    
+    
+    
+    
+    for (var i = 0; i < a.length; i++) {
+    var elem = project[i],
+        color = colors[0];
+    elem.style.color = color;
+    colors.push(color);
+    colors.shift();
+}
+    
+</script>
+    
+    -->
+
     
 </body>
 
