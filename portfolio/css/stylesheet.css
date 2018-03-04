@@ -213,11 +213,12 @@ nav{
 nav a{
     color:#fff;
     margin:auto;
+    font-family: Montserrat;
+    font-size: .8em;
 }
 
 nav a:hover, nav a:focus{
     color:#FFD6E0;
-    display:;
 }
 
 #nav-container{
@@ -228,7 +229,7 @@ nav a:hover, nav a:focus{
 
 nav svg{
     height:16px;
-    margin: auto -8px auto 4px;
+    margin: auto -6px auto 4px;
     position: relative;
     top: 1px;
 }
@@ -905,6 +906,14 @@ MOBILE
 /*--
 MOBILE
 --*/
+
+@media screen and (max-width: 768px) {
+
+    #summary-wrapper{
+        margin:0;
+    }
+    
+}
 
 
 
