@@ -87,7 +87,7 @@ h1{
 h1, h2{
     font-family:Montserrat, sans-serif;
     color:#2a2929;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 5rem;
     line-height: .8em;
     border: 0;
@@ -99,7 +99,7 @@ h1, h2{
 h3{
     font-family:Montserrat, sans-serif;
     color:#2a2929;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 2rem;
     line-height: .8em;
     border: 0;
@@ -281,7 +281,7 @@ MOBILE
     
     nav{
         height: 50px;
-        padding: 8px 0 0 0;
+        padding: 10px 0 0 0;
     }
     
     #nav-container{
@@ -918,6 +918,38 @@ MOBILE
     
     #summary-wrapper a, #case-study-wrapper a{
         font-size: 1em;
+    }
+    
+}
+
+
+@media screen and (max-width: 680px) {
+    
+    #summary h1{
+        font-size: 1.4em;
+    }
+    
+    #summary h2{
+        font-size: 2.4em;
+    }
+    
+    .case-study-wrapper{
+        margin: 0;
+        overflow: visible;
+    }
+    
+    #case-study h3{
+        padding: 0;
+    }
+    
+    #case-study figure{
+        margin: 6em -2em;
+        width: calc(100% + 4em);
+        box-sizing: border-box;        
+    }
+    
+    .case-study-wrapper figcaption{
+        padding: 1em 2.5em 0;
     }
     
 }
