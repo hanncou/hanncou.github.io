@@ -143,11 +143,13 @@ MOBILE
     
     h1, h2{
         font-size:6rem;
+        font-weight:700;
     }
     
     h3{
         font-size:2.4em;
         line-height: .9em;
+        font-weight: 700;
     }
     
     p, a, ul, ol{
