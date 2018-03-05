@@ -266,6 +266,11 @@ MOBILE
         padding: 8px 0 0 0;
     }
     
+    #nav-container{
+        float: none;
+        text-align: center;
+    }
+    
     nav a{
         font-size: 1.5em;
     }
@@ -282,11 +287,6 @@ MOBILE
     nav{
         height: 50px;
         padding: 10px 0 0 0;
-    }
-    
-    #nav-container{
-        float: none;
-        text-align: center;
     }
     
     nav svg{
@@ -848,6 +848,7 @@ MOBILE
     color: #F23C6A;
     font-weight: 400;
     transition: 0s;
+    font-size: 1em;
 }
 
 #summary-wrapper a:hover, .case-study-wrapper a:hover, #summary-wrapper a:focus, .case-study-wrapper a:focus{
@@ -918,6 +919,20 @@ MOBILE
     
     #summary-wrapper a, #case-study-wrapper a{
         font-size: 1em;
+    }
+    
+    /*Moka Prototype*/
+
+    .mobile-no-show, .prototype-wrapper{
+        display: none;
+    }
+    
+    .broken .case-study-wrapper:first-child{
+        margin-bottom: 0;
+    }
+    
+    .broken .case-study-wrapper:last-child{
+        margin-top: 0;
     }
     
 }
