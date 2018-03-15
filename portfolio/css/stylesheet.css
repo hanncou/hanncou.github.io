@@ -746,7 +746,9 @@ svg{
 }
 
 .hidden{
-    display: none;
+    position: absolute;
+    left: -1000px;
+    height: 1px;
 }
 
 #credit p{
@@ -824,10 +826,11 @@ MOBILE
 }
 
 .case-study-wrapper figure{
-    margin: 3em 5%;
+    margin: 3em 0;
     padding: 1em 0;
-    width: 90%;
+    width: 100%;
     border: 1px solid #FFAE87;
+    box-sizing: border-box;
 }
 
 .case-study-wrapper img{
@@ -979,11 +982,16 @@ MOBILE
     position: fixed;
     right: 3em;
     bottom: 3em;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 #to-top a{
-    color: #FF6C6C;
+    color: #c8c1c1;
+    transition: 500ms;
+}
+
+#to-top a:hover{
+    color: #FFAE87;
 }
 
 #to-top svg{
