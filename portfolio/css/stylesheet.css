@@ -217,10 +217,24 @@ nav a{
     margin:auto;
     font-family: Montserrat;
     font-size: .8em;
+    transition: 500ms;
 }
 
 nav a:hover, nav a:focus{
     color:#FFD6E0;
+}
+
+#nav-name{
+    margin:auto 24px;
+    position: absolute;
+}
+
+#nav-name a{
+    margin: -2px 0;
+    float: left;
+    font-family: Montserrat;
+    font-weight:700;
+    font-size: 1.2em;
 }
 
 #nav-container{
@@ -235,21 +249,6 @@ nav svg{
     position: relative;
     top: 1px;
 }
-
-/* Come back to for the onscroll animation
-nav a span{
-    -webkit-transition: ease 500ms;
-    -moz-transition: ease 500ms;
-    transition: ease 500ms;
-}
-
-.nav-small div a span{
-    display:none;
-    -webkit-transition: ease 500ms;
-    -moz-transition: ease 500ms;
-    transition: ease 500ms;
-}
-*/
 
 
 /*--
@@ -269,6 +268,10 @@ MOBILE
     #nav-container{
         float: none;
         text-align: center;
+    }
+    
+    #nav-name{
+        display:none;
     }
     
     nav a{
