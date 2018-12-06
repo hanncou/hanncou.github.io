@@ -3,6 +3,8 @@
     border-right: 1px solid hsl(0, 0%, 84%);
 }
 
+/*Fonts*/
+
 h4{
     font-family: Montserrat;
     font-weight: bold;
@@ -12,3 +14,16 @@ ul > li{
     font-family: Maven Pro;
     font-weight: regular;
 }
+
+/*Indents*/
+
+ul{
+    padding: 0;
+}
+
+ul > ul{
+    margin: 40px;
+    border-left: 1px solid hsl(0, 0%, 84%);
+    padding: 20px;
+}
+
